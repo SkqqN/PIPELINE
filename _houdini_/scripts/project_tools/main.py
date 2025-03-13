@@ -7,7 +7,7 @@ reload(util)
 
 
 #Global variables
-proj_list = 'D:/production/WORK/_houdini_/config/proj_list.json'
+proj_list = 'C:/PATH_TO_WORKING_DIRECTORY/_houdini_/config/proj_list.json'
 
 
 def readJson():
