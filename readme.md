@@ -8,6 +8,7 @@ TO WORK CORRECTLY WITH THIS TOOL :
 - replace PATH_TO_WORKING_DIRECTORY with your personal working directory
 - Enjoy !
 
+_save.py is a shelf tool script working with the pipeline only !_
 
 Every project information will be automatically stored in the dictionary _houdini_/config/proj_list.json
 Custom HDA will be accessible to \_houdini_/hda for global hda used in every projects
