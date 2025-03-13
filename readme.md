@@ -1,7 +1,7 @@
 TO WORK CORRECTLY WITH THIS TOOL :
 
 - Put the _houdini_ folder to your working directory
-- Open _houdini_/project_tools/main.py
+- Open \_houdini_/project_tools/main.py
 - go to line 10 : proj_list = 'C:/PATH_TO_WORKING_DIRECTORY/_houdini_/config/proj_list.json'
 - replace PATH_TO_WORKING_DIRECTORY with your personal working directory
 - Enjoy !
