@@ -1,21 +1,67 @@
 import hou
+import os
 import sys
+import re
+import json
+
+
+path = 'D:/production/WORK/'
+
+
+regex = r'[/\\]+'
+path = re.sub(regex, '/', path)
+
+if path.endswith('/'):
+    path = path[:-1]
+
+if not os.path.exists(path):
+    os.makedirs(path)
+
+if hou.getenv('PIPELINE_PATH'):
+    hou.unsetenv('PIPELINE_PATH')
+hou.putenv('PIPELINE_PATH', path)
+
+
+
+#Config
+config_path = '/'.join((path, r'_houdini_/config'))
+if not os.path.exists(config_path):
+    os.makedirs(config_path)
+
+json_file = '/'.join((config_path, 'proj_list.json'))
+if not os.path.isfile(json_file):
+    data = {}
+    with open(json_file, 'x') as file:
+        json.dump(data, file)
+
 
 
 #Scripts
 scr_folders = [
-    'D:/production/WORK/_houdini_/scripts',
+    '/'.join((path, r'_houdini_/scripts')),
 ]
 
 for p in scr_folders:
+    if not os.path.exists(p):
+        os.makedirs(p)
     sys.path.append(p)
 
 
 #HDAs
-hda_folders = [
-    '$HH/otls/',
-    'D:/production/WORK/_houdini_/hda',
+hda_path = ['$HH/otls/', ]
+
+hda_path_add = [
+    '/'.join((path, r'_houdini_/hda')),
 ]
 
-hou.putenv('HOUDINI_OTLSCAN_PATH', ';'.join(hda_folders))
+for h in hda_path_add:
+    if not os.path.exists(h):
+        os.makedirs(h)
+    hda_path.append(h)
+
+
+if hou.getenv('HOUDINI_OTLSCAN_PATH'):
+    hou.unsetenv('HOUDINI_OTLSCAN_PATH')
+hou.putenv('HOUDINI_OTLSCAN_PATH', ';'.join(hda_path))
+
 hou.hda.reloadAllFiles()
