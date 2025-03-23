@@ -1,4 +1,4 @@
-<h2>Instructions :</h2>
+<h1>Instructions :</h1>
 
 - Put the 123.py file in your user preference script directory (ex: C:/Users/YourName/Documents/houdini(ver)/scripts/123.py)
 - Edit line 8 to refer your working path
