@@ -2,13 +2,13 @@
 
 - Put the 123.py file in your user preference script directory (ex: C:/Users/YourName/Documents/houdini(ver)/scripts/123.py)
 - Edit line 8 to refer your working path
-- \_houdini_ folder and its config files will be automatically created on the next houdini launch
+- _\_houdini\__ folder and its config files will be automatically created on the next houdini launch
 - You can fill the folders with the one provided here to store the tools and hda
 - save.py is the shelf tool to correctly save your scenes
 
 <h3>HDA :</h3>
 
-- SCENE_DATA : Node to create for everyproject to hold the variables and paths according to the pipeline
+- SCENE_DATA : Node to setup the project, hold the variables and paths according to the pipeline
 
 <h3>CONFIG :</h3>
 
@@ -23,11 +23,9 @@
 - SAVE_SCENE : Save the scene in the right place with the right naming convention
 
 - UTILITY SCRIPTS : Used to store fonctions used for multiple tools
+</br>
+</br>
 
-
-
-Every project information will be automatically stored in the dictionary \_houdini_/config/proj_list.json
-
-Global HDAs and scripts used for every projects will be stored in \_houdini_/hda
-
-Project specific HDAs and scripts will be stored in its project folder
+Every project information will be automatically stored in the dictionary _\_houdini\_/config/proj\_list.json_<br/>
+Global HDAs and scripts used for every projects will be stored in _\_houdini\_/hda_</br>
+Project specific HDAs and scripts will be stored in its own project folder
