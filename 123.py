@@ -4,8 +4,8 @@ import sys
 import re
 import json
 
-
-path = 'D:/production/WORK/'
+#CHANGE THIS TO YOUT WORKING DIRECTORY
+path = 'C:/YOUR_WORKING_DIRECTORY/'
 
 
 regex = r'[/\\]+'
