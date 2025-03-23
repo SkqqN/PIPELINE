@@ -7,7 +7,8 @@ reload(util)
 
 
 #Global variables
-proj_list = 'C:/PATH_TO_WORKING_DIRECTORY/_houdini_/config/proj_list.json'
+working_path = hou.getenv('PIPELINE_PATH')
+proj_list = '/'.join((working_path, '/_houdini_/config/proj_list.json'))
 
 
 def readJson():
