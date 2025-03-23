@@ -7,7 +7,8 @@ from utility_scripts import main as util
 reload(util)
 
 
-proj_list = 'D:/production/WORK/_houdini_/config/proj_list.json'
+working_path = hou.getenv('PIPELINE_PATH')
+proj_list = '/'.join((working_path, '/_houdini_/config/proj_list.json'))
 
 
 def readJson():
