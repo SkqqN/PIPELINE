@@ -2,8 +2,8 @@
 
 - Put the 123.py file in your user preference script directory (ex: C:/Users/YourName/Documents/houdini(ver)/scripts/123.py)
 - Edit line 8 to refer your working path
-- _\_houdini\__ folder and its config files will be automatically created on the next houdini launch
-- You can fill the folders with the one provided here to store the tools and hda
+- _\_houdini\__ folder and its config files will be automatically created in your working path on the next houdini launch
+- Fill the folder with the provided files in _\_houdini\__
 - save.py is the shelf tool to correctly save your scenes
 
 
