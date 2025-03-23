@@ -4,7 +4,7 @@
 - Edit line 8 to refer your working path
 - _\_houdini\__ folder and its config files will be automatically created in your working path on the next houdini launch
 - Fill the folder with the provided files in _\_houdini\__
-- save.py is the shelf tool to correctly save your scenes
+- use _save.py_ script to correctly save your scenes (Make it a shelf tool)
 
 
 <h1>Description :</h1>
